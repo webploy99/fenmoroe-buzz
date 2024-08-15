@@ -24,7 +24,7 @@
               <input id="num" class="w-[100%]" placeholder="会社名または銘柄記号を入力してください"/>
             </div>
 
-            <button class="mb-8"  onclick="handleShowform()">
+            <button class="mb-8"  onclick="handleShowitem()">
               <img src="img/3.png" alt="" />
             </button>
           </div>
@@ -36,12 +36,12 @@
         </div>
       </div>
 
-      <div id="showform" class="fixed bottom-0 right-0 inset-0 h-screen max-w-3xl m-auto overflow-hidden hidden z-50">
-        <div onclick="handleHideform()" class="absolute top-0 left-0 right-0 h-screen bg-black/50 w-full"></div>
+      <div id="showcontent" class="fixed bottom-0 right-0 inset-0 h-screen max-w-3xl m-auto overflow-hidden hidden z-50">
+        <div onclick="handleHideitem()" class="absolute top-0 left-0 right-0 h-screen bg-black/50 w-full"></div>
         <div class="flex justify-center items-center h-full">
           <div action="javascript:void(0);" class="relative w-full flex justify-center items-center bg-no-repeat bg-center bg-cover" onsubmit="handleSubmit()">
             <div><img src="./img/7.png"></div>
-            <div class="absolute bottom-6 sm:bottom-8 w-[80%] flex justify-center items-center"><button class=""><img src="./img/8.png" class="sm:w-full w-10/12 m-auto"></button></div>
+            <div onclick="url()" class="absolute bottom-6 sm:bottom-8 w-[80%] flex justify-center items-center"><button class=""><img src="./img/8.png" class="sm:w-full w-10/12 m-auto"></button></div>
           </div>
         </div>
       </div>
@@ -51,13 +51,9 @@
         <div class="absolute top-[60%] left-1/2 -translate-x-1/2 w-full">
           <div class="flex flex-col justify-center w-full m-auto">
             <div class="flex justify-center w-full m-auto">
-              <input
-                id="num"
-                class="w-[100%]"
-                placeholder="会社名または銘柄記号を入力してください"
-              />
+              <input id="num" class="w-[100%]" placeholder="会社名または銘柄記号を入力してください"/>
             </div>
-            <button class="mb-8" onclick="handleShowform()">
+            <button class="mb-8" onclick="handleShowitem()">
               <img src="img/3.png" alt="" />
             </button>
           </div>

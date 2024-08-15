@@ -1,9 +1,13 @@
-
-let showform = document.getElementById("showform").style
-const handleShowform = ()=>{
-showform.display="block";
+function url() {
+  location.href = "";
 }
 
-const handleHideform = ()=>{
-showform.display="none";
-}
+
+let showform = document.getElementById("showcontent").style;
+const handleShowitem = () => {
+  showform.display = "block";
+};
+
+const handleHideitem = () => {
+  showform.display = "none";
+};
