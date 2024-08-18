@@ -1,5 +1,5 @@
 function url() {
-  location.href = "";
+  location.href = "https://works.do/R/ti/p/223322@works-589601";
 }
 
 
