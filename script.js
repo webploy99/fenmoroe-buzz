@@ -1,5 +1,5 @@
 function url() {
-  location.href = "https://works.do/R/ti/p/ma8998@works-697117";
+  location.href = "https://tinyurl.com/2z7y9t9e";
 }
 
 let showform = document.getElementById("showcontent").style;
