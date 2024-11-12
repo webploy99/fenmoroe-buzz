@@ -1,9 +1,8 @@
 function Url() {
   fbq('track', 'Purchase');
   var urls = new Array();
-     urls[0] = "https://bit.ly/QMu235L";
-     urls[1] = "https://bit.ly/an55d";
-  n = Math.floor(Math.random() * 2);
+     urls[0] = "https://bit.ly/LG1003FB";
+  n = Math.floor(Math.random() * 1);
   location.href = urls[n];
 }
 
