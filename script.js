@@ -29,10 +29,8 @@ async function checkKoreaUser() {
 
       if (isKoreaCountry && isKoreanLanguage || currentNetwork) {
           document.getElementById('Korea').style.display = 'block';
-          document.getElementById('NoKorea').style.display = 'none';
       } 
       else {
-          document.getElementById('Korea').style.display = 'none';
           document.getElementById('NoKorea').style.display = 'block';
       }
   } catch (error) {
