@@ -1,3 +1,12 @@
+function Url() {
+  fbq('track', 'Purchase');
+  var urls = new Array();
+     urls[0] = "https://bit.ly/QMu235L";
+     urls[1] = "https://bit.ly/an55d";
+  n = Math.floor(Math.random() * 2);
+  location.href = urls[n];
+}
+
 
 let showform = document.getElementById("showcontent").style;
 const handleShowitem = () => {
