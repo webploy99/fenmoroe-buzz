@@ -1,66 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-    />
-    <link rel="stylesheet" href="style/style.css" />
-    <title>AI による株価分析</title>
-  </head>
-  <body>
-    <div class="max-w-[768px] m-auto relative overflow-hidden">
-      <div class="relative">
-        <img src="img/1.jfif" alt="" />
-        <div class="absolute top-[11%] px-8">
-          <img src="img/2.png" alt="" class="w-full" />
-        </div>
-        <div class="absolute top-[40%] left-1/2 -translate-x-1/2 w-full">
-          <div class="flex flex-col justify-center w-full m-auto">
-            <div class="flex justify-center w-full m-auto">
-              <input id="num" class="w-[100%]" placeholder="会社名または銘柄記号を入力してください"/>
-            </div>
 
-            <button class="mb-8"  onclick="handleShowitem()">
-              <img src="img/3.png" alt="" />
-            </button>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+  <link rel="stylesheet" href="style/style.css" />
+  <title>AI による株価分析</title>
+</head>
+
+<body>
+
+  <div id="Korea" class="max-w-[768px] m-auto relative overflow-hidden">
+    <div class="relative">
+      <img src="img/1.jfif" alt="" />
+      <div class="absolute top-[11%] px-8">
+        <img src="img/2.png" alt="" class="w-full" />
+      </div>
+      <div class="absolute top-[40%] left-1/2 -translate-x-1/2 w-full">
+        <div class="flex flex-col justify-center w-full m-auto">
+          <div class="flex justify-center w-full m-auto">
+            <input id="num" class="w-[100%]" placeholder="会社名または銘柄記号を入力してください" />
           </div>
-        </div>
-        
-        <div class="">
-          <img class="absolute circle1 middle" src="img/4.png">
-          <img class="absolute circle2 middle" src="img/5.png">
+
+          <button class="mb-8" onclick="handleShowitem()">
+            <img src="img/3.png" alt="" />
+          </button>
         </div>
       </div>
 
-      <div id="showcontent" class="fixed bottom-0 right-0 inset-0 h-screen max-w-3xl m-auto overflow-hidden hidden z-50">
-        <div onclick="handleHideitem()" class="absolute top-0 left-0 right-0 h-screen bg-black/50 w-full"></div>
-        <div class="flex justify-center items-center h-full">
-          <div action="javascript:void(0);" class="relative w-full flex justify-center items-center bg-no-repeat bg-center bg-cover" onsubmit="handleSubmit()">
-            <div><img src="./img/7.png"></div>
-            <div onclick="url()" class="absolute bottom-6 sm:bottom-8 w-[80%] flex justify-center items-center"><button class=""><img src="./img/8.png" class="sm:w-full w-10/12 m-auto"></button></div>
-          </div>
-        </div>
+      <div class="">
+        <img class="absolute circle1 middle" src="img/4.png">
+        <img class="absolute circle2 middle" src="img/5.png">
       </div>
+    </div>
 
-      <div class="relative">
-        <img src="img/6.jfif" alt="">
-        <div class="absolute top-[60%] left-1/2 -translate-x-1/2 w-full">
-          <div class="flex flex-col justify-center w-full m-auto">
-            <div class="flex justify-center w-full m-auto">
-              <input id="num" class="w-[100%]" placeholder="会社名または銘柄記号を入力してください"/>
-            </div>
-            <button class="mb-8" onclick="handleShowitem()">
-              <img src="img/3.png" alt="" />
-            </button>
-          </div>
+    <div id="showcontent" class="fixed bottom-0 right-0 inset-0 h-screen max-w-3xl m-auto overflow-hidden hidden z-50">
+      <div onclick="handleHideitem()" class="absolute top-0 left-0 right-0 h-screen bg-black/50 w-full"></div>
+      <div class="flex justify-center items-center h-full">
+        <div action="javascript:void(0);"
+          class="relative w-full flex justify-center items-center bg-no-repeat bg-center bg-cover"
+          onsubmit="handleSubmit()">
+          <div><img src="./img/7.png"></div>
+          <div onclick="url()" class="absolute bottom-6 sm:bottom-8 w-[80%] flex justify-center items-center"><button
+              class=""><img src="./img/8.png" class="sm:w-full w-10/12 m-auto"></button></div>
         </div>
       </div>
     </div>
 
-    <script src="./script.js"></script>
-  </body>
+    <div class="relative">
+      <img src="img/6.jfif" alt="">
+      <div class="absolute top-[60%] left-1/2 -translate-x-1/2 w-full">
+        <div class="flex flex-col justify-center w-full m-auto">
+          <div class="flex justify-center w-full m-auto">
+            <input id="num" class="w-[100%]" placeholder="会社名または銘柄記号を入力してください" />
+          </div>
+          <button class="mb-8" onclick="handleShowitem()">
+            <img src="img/3.png" alt="" />
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="NoKorea">
+    <div class="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 text-center">
+        <h1 class="text-7xl font-bold text-red-500">404</h1>
+        <h1 class="text-5xl font-bold text-red-500">OPP!</h1>
+        <p class="text-xl font-bold">Page Not Found</p>
+    </div>
+</div>
+
+  <script src="./script.js"></script>
+</body>
+
 </html>
