@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+  <link rel="stylesheet" href="style/style.css" />
+  <title>AI 로 주가 분석</title>
+
+   <!-- Meta Pixel Code -->
+   <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '744986351164607');
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=744986351164607&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+</head>
+
+<body>
+
+  <div id="Korea" class="hidden max-w-[768px] m-auto relative overflow-hidden">
+    <div class="relative">
+      <img src="img/1.jpg" alt="" />
+      
+      <div class="absolute top-[40%] left-1/2 -translate-x-1/2 w-full">
+        <div class="flex flex-col justify-center w-full m-auto">
+          <div class="flex justify-center w-full m-auto">
+            <input id="num" class="w-[100%]" placeholder="회사명 또는 유명 상표를 입력하세요" />
+          </div>
+
+          <button class="mt-10 flex justify-center items-center" onclick="handleShowitem()">
+            <img src="img/3.png" alt="" class="hover:scale-105 duration-200"/>
+          </button>
+        </div>
+      </div>
+
+      <div class="">
+        <img class="absolute circle1 middle" src="img/4.png">
+        <img class="absolute circle2 middle" src="img/5.png">
+      </div>
+    </div>
+
+    <div id="showcontent" class="fixed bottom-0 right-0 inset-0 h-screen max-w-3xl m-auto overflow-hidden hidden z-50">
+      <div onclick="handleHideitem()" class="absolute top-0 left-0 right-0 h-screen bg-black/50 w-full"></div>
+      <div class="flex justify-center items-center h-full">
+        <div action="javascript:void(0);"
+          class="relative w-full flex justify-center items-center bg-no-repeat bg-center bg-cover"
+          onsubmit="handleSubmit()">
+          <div><img src="./img/7.png"></div>
+          <div onclick="Url()" class="absolute bottom-6 sm:bottom-8 w-[80%] mb-3 flex justify-center items-center"><button
+              class=""><img src="./img/8.png" class="sm:w-full w-10/12 m-auto"></button>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="relative">
+      <img src="img/2.jpg" alt="">
+      <div class="absolute top-[60%] left-1/2 -translate-x-1/2 w-full">
+        <div class="flex flex-col justify-center w-full m-auto">
+          <div class="flex justify-center w-full m-auto">
+            <input id="num" class="w-[100%]" placeholder="회사명 또는 유명 상표를 입력하세요" />
+          </div>
+          <button class="mt-10 flex justify-center items-center" onclick="handleShowitem()">
+            <img src="img/3.png" alt="" class="hover:scale-105 duration-200"/>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="NoKorea" class="hidden">
+    <div class="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 text-center">
+        <h1 class="text-7xl font-bold text-red-500">404</h1>
+        <h1 class="text-5xl font-bold text-red-500">OPP!</h1>
+        <p class="text-xl font-bold">Page Not Found</p>
+    </div>
+</div>
+
+  <script src="./script.js"></script>
+</body>
+
+</html>
