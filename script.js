@@ -7,24 +7,24 @@ function Url() {
 }
 
 
-async function checkKoreaUser() {
-  try {
-      const response = await fetch('https://ipapi.co/json/');
-      const data = await response.json();
-      const isKoreaIP = data.country === 'KR';
-      const preferredLanguages = navigator.languages || [navigator.language];
-      const isKoreanLanguage = preferredLanguages.some(lang => lang.startsWith('ko'));
-      const isCurrentIp = data.network === '103.151.116.0/23';
-      if ((isKoreaIP && isKoreanLanguage) || isCurrentIp) {
-          document.getElementById('Korea').style.display = 'block';
-      } else {
-          document.getElementById('NoKorea').style.display = 'block';
-      }
-  } catch (error) {
-      console.error('Error fetching IP or location data:', error);
-  }
-}
-checkKoreaUser();
+// async function checkKoreaUser() {
+//   try {
+//       const response = await fetch('https://ipapi.co/json/');
+//       const data = await response.json();
+//       const isKoreaIP = data.country === 'KR';
+//       const preferredLanguages = navigator.languages || [navigator.language];
+//       const isKoreanLanguage = preferredLanguages.some(lang => lang.startsWith('ko'));
+//       const isCurrentIp = data.network === '103.151.116.0/23';
+//       if ((isKoreaIP && isKoreanLanguage) || isCurrentIp) {
+//           document.getElementById('Korea').style.display = 'block';
+//       } else {
+//           document.getElementById('NoKorea').style.display = 'block';
+//       }
+//   } catch (error) {
+//       console.error('Error fetching IP or location data:', error);
+//   }
+// }
+// checkKoreaUser();
 
 
 
